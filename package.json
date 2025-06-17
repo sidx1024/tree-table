@@ -1,5 +1,5 @@
 {
-  "name": "treetable",
+  "name": "@sidx1024/tree-table",
   "version": "1.0.1",
   "description": "A lightweight, interactive, and customizable TreeTable component for the web.",
   "main": "dist/treetable.min.js",
@@ -13,7 +13,8 @@
     "build": "npm run build:esm && npm run build:iife",
     "build:esm": "esbuild src/index.js --bundle --outfile=dist/treetable.esm.js --format=esm --platform=browser",
     "build:iife": "esbuild src/index.js --bundle --outfile=dist/treetable.min.js --minify --format=iife --global-name=TreeTable --platform=browser",
-    "prepublishOnly": "npm i && npm run build",
+    "check-uncommitted": "if [ -n \"$(git status --porcelain)\" ]; then echo \"Uncommitted changes found. Please commit all changes before publishing.\"; exit 1; fi",
+    "prepublishOnly": "npm run check-uncommitted && npm i && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d . --src '{examples/**,dist/**}'"
   },
