@@ -13,7 +13,9 @@
     "build": "npm run build:esm && npm run build:iife",
     "build:esm": "esbuild src/index.js --bundle --outfile=dist/treetable.esm.js --format=esm --platform=browser",
     "build:iife": "esbuild src/index.js --bundle --outfile=dist/treetable.min.js --minify --format=iife --global-name=TreeTable --platform=browser",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d . --src '{examples/**,dist/**}'"
   },
   "keywords": [
     "treetable",
@@ -25,6 +27,7 @@
   "license": "ISC",
   "devDependencies": {
     "esbuild": "0.21.5",
+    "gh-pages": "^6.1.1",
     "serve": "14.2.3"
   }
 }
