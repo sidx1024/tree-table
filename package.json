@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "serve examples",
+    "dev": "serve",
     "build": "npm run build:esm && npm run build:iife",
     "build:esm": "esbuild src/index.js --bundle --outfile=dist/treetable.esm.js --format=esm --platform=browser",
     "build:iife": "esbuild src/index.js --bundle --outfile=dist/treetable.min.js --minify --format=iife --global-name=TreeTable --platform=browser",
