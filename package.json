@@ -24,6 +24,10 @@
     "visualization",
     "profiling"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidx1024/tree-table.git"
+  },
   "author": "sid",
   "license": "MIT",
   "publishConfig": {
