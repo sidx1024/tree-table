@@ -9,7 +9,6 @@ This visualization tool is ideal for local development and not intended to be us
 
 You can find more examples in the `examples` directory:
 
-- [`cdn.html`](./examples/cdn.html): A basic example of using the library from a CDN.
 - [`profile`](./examples/profile): An example of a complex performance profile visualization.
 - [`dependencies`](./examples/dependencies): An example visualizing a dependency tree.
 - [`stress`](./examples/stress): A stress test example with a large dataset.
