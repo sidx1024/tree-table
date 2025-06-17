@@ -1,0 +1,30 @@
+{
+  "name": "treetable",
+  "version": "1.0.1",
+  "description": "A lightweight, interactive, and customizable TreeTable component for the web.",
+  "main": "dist/treetable.min.js",
+  "module": "dist/treetable.esm.js",
+  "jsdelivr": "dist/treetable.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "serve examples",
+    "build": "npm run build:esm && npm run build:iife",
+    "build:esm": "esbuild src/index.js --bundle --outfile=dist/treetable.esm.js --format=esm --platform=browser",
+    "build:iife": "esbuild src/index.js --bundle --outfile=dist/treetable.min.js --minify --format=iife --global-name=TreeTable --platform=browser",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "treetable",
+    "performance",
+    "visualization",
+    "profiling"
+  ],
+  "author": "sid",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.21.5",
+    "serve": "14.2.3"
+  }
+}
