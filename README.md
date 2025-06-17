@@ -3,6 +3,8 @@
 This is a small library for visualizing data in a tree table, inspired by the one in the Chrome DevTools performance tab. I couldn't find a library to visualize my own data in a similar format, so I created this.
 This visualization tool is ideal for local development and not intended to be used in production.
 
+![tree-table in action](examples/screenshot.png)
+
 ## Examples
 
 You can find more examples in the `examples` directory:
