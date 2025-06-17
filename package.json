@@ -1,6 +1,6 @@
 {
   "name": "@sidx1024/tree-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, interactive, and customizable TreeTable component for the web.",
   "main": "dist/treetable.min.js",
   "module": "dist/treetable.esm.js",
@@ -26,6 +26,9 @@
   ],
   "author": "sid",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "esbuild": "0.21.5",
     "gh-pages": "^6.1.1",
