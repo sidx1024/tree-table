@@ -20,7 +20,7 @@ You can find more examples in the `examples` directory:
     Add the script to your HTML file.
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/@sidx1024/treetable@1.0.2/dist/treetable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@sidx1024/treetable@1.0.3/dist/treetable.min.js"></script>
     ```
 
 2.  **Create a container**

@@ -1,6 +1,6 @@
 {
   "name": "@sidx1024/tree-table",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight, interactive, and customizable TreeTable component for the web.",
   "main": "dist/treetable.min.js",
   "module": "dist/treetable.esm.js",
